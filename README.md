@@ -1,5 +1,3 @@
-<h2 align="center">Hola 👋 amigos, Welcome to my GitHub</h2>
-
 # Hello, World! 🌍
 
 ```

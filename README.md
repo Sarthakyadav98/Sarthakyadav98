@@ -1,100 +1,35 @@
-<h2 align="center" style="color: #FFFFFF; background-color: #2b2b2b; padding: 20px; border-radius: 10px;">
-  Hola 👋 amigos, Welcome to my GitHub
-</h2>
+# Hello World! 🌍
 
-###
+I'm Sarthak Yadav, a passionate developer studying at IIIT-Kottayam '27. I love building web apps, competing in programming contests, and diving into new tech. Check out my projects and let's collaborate!
 
-<p align="left" style="background-color: #1e1e1e; color: #FFFFFF; padding: 20px; border-radius: 10px;">
-# Hello World! 🌍<br><br>
-```python<br>
-def introduce_myself():<br>
-    name = "Sarthak Yadav"<br>
-    education = "IIIT-Kottayam '27"<br>
-    roles = ["Full Stack Developer", "Competitive Programmer", "Python  and Js Developer"]<br>
-    skills = ["MERN Stack", "Python"]<br><br>
-    achievements = {<br>
-        "Codechef Rating": "3⭐",<br>
-        "Notable Projects": ["Project1", "Project2", "Project3"]<br>
-    }<br><br>
-    hobbies = ["Traveling", "Learning New Technologies", "Open Source Contributions"]<br><br>
-    bio = f"Hey there! I'm {name}, a passionate developer studying at {education}. I love building web apps, competing in programming contests, and diving into new tech. Check out my projects and let's collaborate!"<br>
-    <br>
-    return bio<br><br>
-print(introduce_myself())
-</p>
+## Roles
+- Full Stack Developer
+- Competitive Programmer
+- Python and Js Developer
 
-###
+## Skills
+- MERN Stack
+- Python
 
-<div align="center" style="background-color: #2b2b2b; padding: 20px; border-radius: 10px; margin: 20px 0;">
-  <img src="https://github-readme-stats.vercel.app/api?username=sarthakyadav98&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph" style="animation: fadeIn 2s;" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=sarthakyadav98&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph" style="animation: fadeIn 2s;" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sarthakyadav98&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph" style="animation: fadeIn 2s;" />
-</div>
+## Achievements
+- Codechef Rating: 3⭐
+- Notable Projects: Project1, Project2, Project3
 
-###
+## Hobbies
+- Traveling
+- Learning New Technologies
+- Open Source Contributions
 
-<br clear="both">
+## GitHub Stats
 
-<div align="center" style="background-color: #1e1e1e; padding: 20px; border-radius: 10px; margin: 20px 0;">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="c logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" height="40" alt="canva logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" alt="express logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" height="40" alt="jquery logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" height="40" alt="materialui logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" alt="mongodb logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="nextjs logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" height="40" alt="nginx logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="40" alt="npm logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="40" alt="numpy logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" alt="pandas logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" height="40" alt="redux logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40" alt="tensorflow logo" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height="40" alt="tailwindcss logo" style="margin: 10px;" />
-</div>
+![Sarthak's GitHub stats](https://github-readme-stats.vercel.app/api?username=sarthakyadav98&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1)
 
-###
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=sarthakyadav98&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2)
 
-<div align="center" style="background-color: #2b2b2b; padding: 20px; border-radius: 10px; margin: 20px 0;">
-  <a href="https://www.instagram.com/the___enigma_/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo" style="animation: fadeIn 2s;" />
-  </a>
-  <a href="https://www.linkedin.com/in/sarthak-001-001-yadav/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo" style="animation: fadeIn 2s;" />
-  </a>
-  <a href="https://discord.com/channels/__ph0enix_" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="discord logo" style="animation: fadeIn 2s;" />
-  </a>
-  <a href="mailto:sarthak.enigma@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="gmail logo" style="animation: fadeIn 2s;" />
-  </a>
-</div>
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=sarthakyadav98&radius=16&theme=react&area=true&order=5)
 
-###
-
-
-<style>
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-</style>
+## Connect with me
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/the___enigma_/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sarthak-001-001-yadav/)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/__ph0enix_)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sarthak.enigma@gmail.com)

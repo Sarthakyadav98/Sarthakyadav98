@@ -80,7 +80,7 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/sarthakyadav98/sarthakyadav98/output/snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/sarthakyadav98/sarthakyadav98/snake.svg" alt="Snake animation" />
 
 ###
 

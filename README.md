@@ -1,26 +1,11 @@
-# Hello, World! 🌍
+# Hello, World! 🌍 I'm Sarthak 👨‍💻
 
-```
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Hello, I'm Sarthak Yadav!");
-        Console.WriteLine("I'm a passionate developer studying at IIIT-Kottayam '27.");
-        Console.WriteLine("I love building web apps, competing in programming contests, and diving into new tech.");
-        Console.WriteLine("Let's collaborate!");
-    }
-}
-
-```
 
 ###
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sarthakyadav98&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=sarthakyadav98&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
+  
+ 
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=sarthakyadav98&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
 </div>
 

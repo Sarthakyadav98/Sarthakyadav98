@@ -43,10 +43,10 @@
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=SarthakYadav-dev&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=Sarthakyadav98&theme=tokyonight&hide_border=true" />
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api?username=SarthakYadav-dev&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SarthakYadav-dev&layout=compact&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Sarthakyadav98&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sarthakyadav98&layout=compact&theme=tokyonight&hide_border=true" />
 </div>
 
 ---
@@ -58,13 +58,12 @@
 | 🩺 **Tabeeb** – Online Medical Consultation Platform | PERN Stack + Redis + WebSockets + Agora |
 | 🛍️ **The Wolfhouse** – Shopify Clothing Brand | Shopify + Liquid + Custom Code |
 | 📦 **SpareItUp** – Rental Marketplace | Python (Flask) + PostgreSQL |
-| 📊 **GST Filing WebApp** *(in progress)* | Node.js + PostgreSQL + React (switching from Python) |
 
 ---
 
 ## 📌 Currently Working On
 
-- 🚧 Finishing freelance projects for clients in healthcare and e-commerce
+- 🚧 Finishing projects for clients in healthcare and e-commerce
 - 🧠 Mastering backend architecture & real-time communication
 - 🌐 Building presence on **Upwork** and **LinkedIn Sales Navigator**
 - 📚 Exploring AI/ML fundamentals alongside development
@@ -72,6 +71,4 @@
 
 ---
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=SarthakYadav-dev&label=Profile%20views&color=blue&style=flat" />
-</p>
+

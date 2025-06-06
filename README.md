@@ -48,7 +48,7 @@
 
 ---
 
-## ✨ Featured Projects
+## ✨ Successful Freelance Projects
 
 | 🚀 Project | 💻 Stack |
 |-----------|----------|

@@ -1,7 +1,7 @@
 <h1 align="center">Hey there! I'm Sarthak 👋</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=10B981&center=true&vCenter=true&width=550&lines=Full-Stack+Developer;Freelancer+%7C+Backend+Specialist;Express.js+%7C+PostgreSQL+%7C+Redis+%7C+Agora;Turning+ideas+into+reality+through+code" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=10B981&center=true&vCenter=true&width=550&lines=Full-Stack+Developer;Freelancer+%7C+Backend+Specialist;Turning+ideas+into+reality+through+code" alt="Typing Animation" />
 </p>
 
 ---

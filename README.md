@@ -64,8 +64,6 @@
 - 🧠 Mastering backend architecture & real-time communication
 - 🌐 Building presence on **Upwork** and **LinkedIn Sales Navigator**
 - 📚 Exploring AI/ML fundamentals alongside development
-- 💪 Staying consistent with workouts & overall transformation
-
 ---
 
 

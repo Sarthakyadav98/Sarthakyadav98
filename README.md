@@ -60,10 +60,10 @@
 
 ## 📌 Currently Working On
 
-- 🚧 Finishing projects for clients in healthcare and e-commerce.
-- 🧠 Mastering backend architecture & real-time communication.
-- 🌐 Building presence on **Upwork** and **LinkedIn Sales Navigator**.
-- 📚 Exploring AI/ML fundamentals alongside development.
+- 🚧 Finishing projects for clients in healthcare and e-commerce
+- 🧠 Mastering backend architecture & real-time communication
+- 🌐 Building presence on **Upwork** and **LinkedIn Sales Navigator**
+- 📚 Exploring AI/ML fundamentals alongside development
 ---
 
 

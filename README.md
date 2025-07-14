@@ -54,7 +54,7 @@
 |-----------|----------|
 | 🩺 **Tabeeb** – Online Medical Consultation Platform | PERN Stack + Redis + WebSockets + Agora |
 | 🛍️ **The Wolfhouse** – Shopify Clothing Brand | Shopify + Liquid + Custom Code |
-| 📦 **SpareItUp** – Rental Marketplace | Python (Flask) + PostgreSQL |
+| 📦 **SpareItUp** – Rental Marketplace | Python (Flask) + PostgreSQL  |
 
 ---
 

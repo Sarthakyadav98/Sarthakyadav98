@@ -12,7 +12,7 @@
 🧠 Currently focused on **Node.js**, **PostgreSQL**, **Redis**, **React**, and **WebSockets**, while exploring **AI/ML**.  
 📱 Also building **cross-platform apps** using **React Native** and integrating tools like **Agora** for real-time experiences.  
 🎯 My goal is to become a **well-rounded tech solutions provider**—skilled in backend, product, business, and user experience.  
-🛠️ I love client work, taking ownership,  and scaling ideas from 0 → 1.
+🛠️ I love client work, taking ownership, and scaling ideas from 0 → 1.
 
 ---
 

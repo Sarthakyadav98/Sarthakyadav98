@@ -23,26 +23,10 @@ Over the past few years I've worked with early-stage teams and products across *
 
 Most of my work lives somewhere around here:
 
-```
-                       ┌──────────────┐
-                       │    Client    │
-                       └──────┬───────┘
-                              │
-                              ▼
-                         ┌─────────┐
-                         │   API   │
-                         └────┬────┘
-                              │
-                              ▼
-                       ┌─────────────┐
-                       │   Service   │
-                       └──────┬──────┘
-                  ┌───────────┼───────────┐
-                  ▼           ▼           ▼
-             ┌────────┐  ┌────────┐  ┌───────────┐
-             │   DB   │  │ Cache  │  │ WebSocket │
-             └────────┘  └────────┘  └───────────┘
-```
+<div align="center">
+  <img src="./architecture-diagram.svg" width="640" alt="system architecture diagram" />
+</div>
+
 
 I like figuring out what happens when the boxes in that diagram stop talking to each other.
 

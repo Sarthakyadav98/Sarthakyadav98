@@ -1,91 +1,239 @@
-<svg viewBox="0 0 900 580" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1200 1080" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#58A6FF"/>
-    </marker>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.4" fill="#161b22"/>
+    </pattern>
+    <radialGradient id="glowBg" cx="50%" cy="46%" r="62%">
+      <stop offset="0%" stop-color="#1f6feb" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="grad-client-cdn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="grad-cdn-lb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818cf8"/><stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="grad-lb-gw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
     <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
+    <marker id="a-indigo" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#818cf8"/></marker>
+    <marker id="a-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/></marker>
+    <marker id="a-sky" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#38bdf8"/></marker>
+    <marker id="a-cyan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#22d3ee"/></marker>
+    <marker id="a-teal" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2dd4bf"/></marker>
+    <marker id="a-amber" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#fbbf24"/></marker>
+    <marker id="a-orange" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#fb923c"/></marker>
+    <marker id="a-rose" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f472b6"/></marker>
+
     <symbol id="icon-client" viewBox="0 0 24 24">
-      <rect x="2" y="3" width="20" height="14" rx="1.5" fill="none" stroke="#58A6FF" stroke-width="1.6"/>
-      <rect x="9" y="18" width="6" height="2" fill="#58A6FF"/>
-      <rect x="6" y="20.2" width="12" height="1.6" rx="0.8" fill="#58A6FF"/>
+      <rect x="2" y="3" width="20" height="14" rx="1.5" fill="none" stroke="#a78bfa" stroke-width="1.6"/>
+      <rect x="9" y="18" width="6" height="2" fill="#a78bfa"/><rect x="6" y="20.2" width="12" height="1.6" rx="0.8" fill="#a78bfa"/>
     </symbol>
-
-    <symbol id="icon-api" viewBox="0 0 24 24">
-      <text x="12" y="17" font-family="'Fira Code', monospace" font-size="15" fill="#58A6FF" text-anchor="middle">{ }</text>
+    <symbol id="icon-cdn" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="#818cf8" stroke-width="1.5"/>
+      <ellipse cx="12" cy="12" rx="4" ry="9" fill="none" stroke="#818cf8" stroke-width="1.3"/>
+      <line x1="3" y1="12" x2="21" y2="12" stroke="#818cf8" stroke-width="1.3"/>
     </symbol>
-
-    <symbol id="icon-service" viewBox="0 0 24 24">
-      <polygon points="12,2 20,6 20,14 12,18 4,14 4,6" fill="none" stroke="#58A6FF" stroke-width="1.6"/>
-      <circle cx="12" cy="10" r="3" fill="#58A6FF"/>
+    <symbol id="icon-lb" viewBox="0 0 24 24">
+      <circle cx="5" cy="5" r="1.8" fill="#60a5fa"/><circle cx="12" cy="5" r="1.8" fill="#60a5fa"/><circle cx="19" cy="5" r="1.8" fill="#60a5fa"/>
+      <circle cx="12" cy="19" r="2.1" fill="#60a5fa"/>
+      <line x1="5" y1="5" x2="12" y2="19" stroke="#60a5fa" stroke-width="1.3"/>
+      <line x1="12" y1="5" x2="12" y2="19" stroke="#60a5fa" stroke-width="1.3"/>
+      <line x1="19" y1="5" x2="12" y2="19" stroke="#60a5fa" stroke-width="1.3"/>
     </symbol>
-
+    <symbol id="icon-gateway" viewBox="0 0 24 24">
+      <path d="M12,2 L20,5 V11 C20,17 12,22 12,22 C12,22 4,17 4,11 V5 Z" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+      <path d="M8,12 L11,15 L16,9" fill="none" stroke="#38bdf8" stroke-width="1.6"/>
+    </symbol>
+    <symbol id="icon-auth" viewBox="0 0 24 24">
+      <rect x="7" y="11" width="10" height="8" rx="1.5" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+      <path d="M9,11 V8 A3,3 0 0 1 15,8 V11" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+      <circle cx="12" cy="15" r="1.2" fill="#22d3ee"/>
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+      <path d="M4,21 C4,15 8,13 12,13 C16,13 20,15 20,21" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+    </symbol>
+    <symbol id="icon-order" viewBox="0 0 24 24">
+      <rect x="4" y="8" width="16" height="12" rx="1" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+      <path d="M4,8 L12,3 L20,8" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+      <line x1="12" y1="8" x2="12" y2="20" stroke="#22d3ee" stroke-width="1.1" opacity="0.6"/>
+    </symbol>
+    <symbol id="icon-broker" viewBox="0 0 24 24">
+      <circle cx="12" cy="4.5" r="2.1" fill="#2dd4bf"/><circle cx="5" cy="18" r="2.1" fill="#2dd4bf"/><circle cx="19" cy="18" r="2.1" fill="#2dd4bf"/>
+      <line x1="12" y1="4.5" x2="5" y2="18" stroke="#2dd4bf" stroke-width="1.3"/>
+      <line x1="12" y1="4.5" x2="19" y2="18" stroke="#2dd4bf" stroke-width="1.3"/>
+      <line x1="5" y1="18" x2="19" y2="18" stroke="#2dd4bf" stroke-width="1.3"/>
+    </symbol>
+    <symbol id="icon-cache" viewBox="0 0 24 24"><polygon points="13,2 5,13 11,13 9,22 19,9 13,9" fill="#fbbf24"/></symbol>
     <symbol id="icon-db" viewBox="0 0 24 24">
-      <ellipse cx="12" cy="5" rx="8" ry="3" fill="none" stroke="#58A6FF" stroke-width="1.6"/>
-      <path d="M4 5 V17 A8 3 0 0 0 20 17 V5" fill="none" stroke="#58A6FF" stroke-width="1.6"/>
-      <path d="M4 11 A8 3 0 0 0 20 11" fill="none" stroke="#58A6FF" stroke-width="1.3" opacity="0.6"/>
+      <ellipse cx="12" cy="5" rx="8" ry="3" fill="none" stroke="#fb923c" stroke-width="1.6"/>
+      <path d="M4 5 V17 A8 3 0 0 0 20 17 V5" fill="none" stroke="#fb923c" stroke-width="1.6"/>
+      <path d="M4 11 A8 3 0 0 0 20 11" fill="none" stroke="#fb923c" stroke-width="1.3" opacity="0.6"/>
     </symbol>
-
-    <symbol id="icon-cache" viewBox="0 0 24 24">
-      <polygon points="13,2 5,13 11,13 9,22 19,9 13,9" fill="#58A6FF"/>
+    <symbol id="icon-storage" viewBox="0 0 24 24">
+      <path d="M6,6 H18 L16,20 H8 Z" fill="none" stroke="#f472b6" stroke-width="1.6"/>
+      <ellipse cx="12" cy="6" rx="6" ry="1.8" fill="none" stroke="#f472b6" stroke-width="1.4"/>
+      <line x1="8.5" y1="13" x2="15.5" y2="13" stroke="#f472b6" stroke-width="1" opacity="0.6"/>
     </symbol>
-
-    <symbol id="icon-ws" viewBox="0 0 24 24">
-      <path d="M4 15 Q12 3 20 15" fill="none" stroke="#58A6FF" stroke-width="1.6" opacity="0.35"/>
-      <path d="M7 16 Q12 8 17 16" fill="none" stroke="#58A6FF" stroke-width="1.6" opacity="0.7"/>
-      <circle cx="12" cy="18" r="2" fill="#58A6FF"/>
-    </symbol>
+    <symbol id="icon-log" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6" stroke="#8b949e" stroke-width="1.6"/><line x1="4" y1="12" x2="20" y2="12" stroke="#8b949e" stroke-width="1.6"/><line x1="4" y1="18" x2="14" y2="18" stroke="#8b949e" stroke-width="1.6"/></symbol>
+    <symbol id="icon-metric" viewBox="0 0 24 24"><rect x="5" y="12" width="3" height="8" fill="#8b949e"/><rect x="10.5" y="7" width="3" height="13" fill="#8b949e"/><rect x="16" y="15" width="3" height="5" fill="#8b949e"/></symbol>
+    <symbol id="icon-trace" viewBox="0 0 24 24"><path d="M4,14 L9,7 L13,16 L20,5" fill="none" stroke="#8b949e" stroke-width="1.6"/></symbol>
   </defs>
 
   <!-- background -->
-  <rect x="1" y="1" width="898" height="578" rx="18" fill="#0d1117" stroke="#30363d"/>
-  <text x="30" y="34" font-family="'Fira Code', monospace" font-size="14" fill="#8b949e">// system architecture</text>
+  <rect x="1" y="1" width="1198" height="1078" rx="20" fill="#0d1117" stroke="#30363d"/>
+  <rect x="1" y="1" width="1198" height="1078" rx="20" fill="url(#dots)" opacity="0.5"/>
+  <ellipse cx="600" cy="540" rx="560" ry="500" fill="url(#glowBg)"/>
+  <text x="30" y="34" font-family="'Fira Code', monospace" font-size="14" fill="#8b949e">// system architecture — production topology</text>
 
-  <!-- connecting lines -->
-  <line x1="450" y1="134" x2="450" y2="188" stroke="#58A6FF" stroke-width="1.8" marker-end="url(#arrow)"/>
-  <line x1="450" y1="254" x2="450" y2="308" stroke="#58A6FF" stroke-width="1.8" marker-end="url(#arrow)"/>
-  <line x1="450" y1="374" x2="450" y2="420" stroke="#58A6FF" stroke-width="1.8"/>
-  <line x1="175" y1="420" x2="735" y2="420" stroke="#58A6FF" stroke-width="1.8"/>
-  <line x1="175" y1="420" x2="175" y2="458" stroke="#58A6FF" stroke-width="1.8" marker-end="url(#arrow)"/>
-  <line x1="450" y1="420" x2="450" y2="458" stroke="#58A6FF" stroke-width="1.8" marker-end="url(#arrow)"/>
-  <line x1="735" y1="420" x2="735" y2="458" stroke="#58A6FF" stroke-width="1.8" marker-end="url(#arrow)"/>
-  <circle cx="450" cy="420" r="3" fill="#58A6FF"/>
-  <circle cx="175" cy="420" r="3" fill="#58A6FF"/>
-  <circle cx="735" cy="420" r="3" fill="#58A6FF"/>
+  <!-- side tier labels -->
+  <g font-family="'Fira Code', monospace" font-size="10" letter-spacing="3" fill="#484f58" text-anchor="middle">
+    <text x="34" y="113" transform="rotate(-90 34 113)">CLIENT</text>
+    <text x="34" y="258" transform="rotate(-90 34 258)">EDGE</text>
+    <text x="34" y="400" transform="rotate(-90 34 400)">NETWORK</text>
+    <text x="34" y="544" transform="rotate(-90 34 544)">GATEWAY</text>
+    <text x="34" y="689" transform="rotate(-90 34 689)">SERVICES</text>
+    <text x="34" y="834" transform="rotate(-90 34 834)">ASYNC</text>
+    <text x="34" y="980" transform="rotate(-90 34 980)">DATA</text>
+  </g>
 
-  <!-- Client -->
-  <rect x="350" y="70" width="200" height="64" rx="10" fill="#161b22" stroke="#58A6FF" stroke-width="1.6" filter="url(#glow)"/>
-  <use href="#icon-client" x="438" y="78" width="24" height="24"/>
-  <text x="450" y="122" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#c9d1d9">Client</text>
+  <!-- primary vertical connectors -->
+  <line x1="600" y1="150" x2="600" y2="220" stroke="url(#grad-client-cdn)" stroke-width="2" marker-end="url(#a-indigo)"/>
+  <line x1="600" y1="296" x2="600" y2="362" stroke="url(#grad-cdn-lb)" stroke-width="2" marker-end="url(#a-blue)"/>
+  <line x1="600" y1="438" x2="600" y2="504" stroke="url(#grad-lb-gw)" stroke-width="2" marker-end="url(#a-sky)"/>
 
-  <!-- API -->
-  <rect x="350" y="190" width="200" height="64" rx="10" fill="#161b22" stroke="#58A6FF" stroke-width="1.6" filter="url(#glow)"/>
-  <use href="#icon-api" x="438" y="198" width="24" height="24"/>
-  <text x="450" y="242" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#c9d1d9">API</text>
+  <g font-family="'Fira Code', monospace" font-size="10" text-anchor="middle">
+    <rect x="555" y="175" width="90" height="22" rx="11" fill="#0d1117" stroke="#818cf8"/><text x="600" y="189" fill="#a5b4fc">HTTPS</text>
+    <rect x="520" y="319" width="160" height="22" rx="11" fill="#0d1117" stroke="#60a5fa"/><text x="600" y="333" fill="#93c5fd">origin pull (miss)</text>
+    <rect x="525" y="461" width="150" height="22" rx="11" fill="#0d1117" stroke="#38bdf8"/><text x="600" y="475" fill="#7dd3fc">round-robin</text>
+  </g>
 
-  <!-- Service -->
-  <rect x="330" y="310" width="240" height="64" rx="10" fill="#161b22" stroke="#58A6FF" stroke-width="1.6" filter="url(#glow)"/>
-  <use href="#icon-service" x="438" y="318" width="24" height="24"/>
-  <text x="450" y="362" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#c9d1d9">Service</text>
+  <!-- fan-out: gateway -> services -->
+  <line x1="600" y1="584" x2="600" y2="614" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="340" y1="614" x2="860" y2="614" stroke="#3b4252" stroke-width="2"/>
+  <line x1="340" y1="614" x2="340" y2="644" stroke="#22d3ee" stroke-width="2" marker-end="url(#a-cyan)"/>
+  <line x1="600" y1="614" x2="600" y2="644" stroke="#22d3ee" stroke-width="2" marker-end="url(#a-cyan)"/>
+  <line x1="860" y1="614" x2="860" y2="644" stroke="#22d3ee" stroke-width="2" marker-end="url(#a-cyan)"/>
 
-  <!-- DB -->
-  <rect x="90" y="460" width="170" height="74" rx="10" fill="#161b22" stroke="#58A6FF" stroke-width="1.6" filter="url(#glow)"/>
-  <use href="#icon-db" x="163" y="470" width="24" height="24"/>
-  <text x="175" y="518" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#c9d1d9">DB</text>
+  <!-- fan-in: services -> broker -->
+  <line x1="340" y1="734" x2="340" y2="764" stroke="#22d3ee" stroke-width="2"/>
+  <line x1="600" y1="734" x2="600" y2="764" stroke="#22d3ee" stroke-width="2"/>
+  <line x1="860" y1="734" x2="860" y2="764" stroke="#22d3ee" stroke-width="2"/>
+  <line x1="340" y1="764" x2="860" y2="764" stroke="#3b4252" stroke-width="2"/>
+  <line x1="600" y1="764" x2="600" y2="794" stroke="#2dd4bf" stroke-width="2" marker-end="url(#a-teal)"/>
 
-  <!-- Cache -->
-  <rect x="365" y="460" width="170" height="74" rx="10" fill="#161b22" stroke="#58A6FF" stroke-width="1.6" filter="url(#glow)"/>
-  <use href="#icon-cache" x="438" y="470" width="24" height="24"/>
-  <text x="450" y="518" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#c9d1d9">Cache</text>
+  <!-- fan-out: broker -> data -->
+  <line x1="600" y1="874" x2="600" y2="904" stroke="#2dd4bf" stroke-width="2"/>
+  <line x1="340" y1="904" x2="860" y2="904" stroke="#3b4252" stroke-width="2"/>
+  <line x1="340" y1="904" x2="340" y2="934" stroke="#fbbf24" stroke-width="2" marker-end="url(#a-amber)"/>
+  <line x1="600" y1="904" x2="600" y2="934" stroke="#fb923c" stroke-width="2" marker-end="url(#a-orange)"/>
+  <line x1="860" y1="904" x2="860" y2="934" stroke="#f472b6" stroke-width="2" marker-end="url(#a-rose)"/>
 
-  <!-- WebSocket -->
-  <rect x="640" y="460" width="190" height="74" rx="10" fill="#161b22" stroke="#58A6FF" stroke-width="1.6" filter="url(#glow)"/>
-  <use href="#icon-ws" x="723" y="470" width="24" height="24"/>
-  <text x="735" y="518" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#c9d1d9">WebSocket</text>
+  <circle cx="600" cy="614" r="3" fill="#38bdf8"/><circle cx="340" cy="614" r="3" fill="#3b4252"/><circle cx="860" cy="614" r="3" fill="#3b4252"/>
+  <circle cx="340" cy="764" r="3" fill="#3b4252"/><circle cx="860" cy="764" r="3" fill="#3b4252"/><circle cx="600" cy="764" r="3" fill="#2dd4bf"/>
+  <circle cx="600" cy="904" r="3" fill="#2dd4bf"/><circle cx="340" cy="904" r="3" fill="#3b4252"/><circle cx="860" cy="904" r="3" fill="#3b4252"/>
+
+  <!-- animated particles -->
+  <circle r="3.4" fill="#ffffff"><animateMotion dur="1.6s" begin="0s" repeatCount="indefinite" path="M600,150 L600,220"/></circle>
+  <circle r="3.4" fill="#ffffff"><animateMotion dur="1.6s" begin="0.4s" repeatCount="indefinite" path="M600,296 L600,362"/></circle>
+  <circle r="3.4" fill="#ffffff"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M600,438 L600,504"/></circle>
+
+  <circle r="3.2" fill="#22d3ee"><animateMotion dur="2s" begin="0.1s" repeatCount="indefinite" path="M600,584 L600,614 L340,614 L340,644"/></circle>
+  <circle r="3.2" fill="#22d3ee"><animateMotion dur="2s" begin="0.4s" repeatCount="indefinite" path="M600,584 L600,644"/></circle>
+  <circle r="3.2" fill="#22d3ee"><animateMotion dur="2s" begin="0.7s" repeatCount="indefinite" path="M600,584 L600,614 L860,614 L860,644"/></circle>
+
+  <circle r="3.2" fill="#2dd4bf"><animateMotion dur="2s" begin="0.2s" repeatCount="indefinite" path="M340,734 L340,764 L600,764 L600,794"/></circle>
+  <circle r="3.2" fill="#2dd4bf"><animateMotion dur="2s" begin="0.5s" repeatCount="indefinite" path="M600,734 L600,794"/></circle>
+  <circle r="3.2" fill="#2dd4bf"><animateMotion dur="2s" begin="0.8s" repeatCount="indefinite" path="M860,734 L860,764 L600,764 L600,794"/></circle>
+
+  <circle r="3.2" fill="#fbbf24"><animateMotion dur="2s" begin="0.15s" repeatCount="indefinite" path="M600,874 L600,904 L340,904 L340,934"/></circle>
+  <circle r="3.2" fill="#fb923c"><animateMotion dur="2s" begin="0.45s" repeatCount="indefinite" path="M600,874 L600,934"/></circle>
+  <circle r="3.2" fill="#f472b6"><animateMotion dur="2s" begin="0.75s" repeatCount="indefinite" path="M600,874 L600,904 L860,904 L860,934"/></circle>
+
+  <!-- telemetry tap -->
+  <path d="M730,544 C 880,544 880,765 980,765" fill="none" stroke="#484f58" stroke-width="1.4" stroke-dasharray="4 4"/>
+  <text x="790" y="530" font-family="'Fira Code', monospace" font-size="9.5" fill="#6e7681">telemetry</text>
+
+  <!-- CLIENT -->
+  <rect x="490" y="70" width="220" height="80" rx="12" fill="#161b22" stroke="#a78bfa" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-client" x="588" y="80" width="24" height="24"/>
+  <text x="600" y="122" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#e6edf3">Client</text>
+  <text x="600" y="140" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#7d8590">Web / Mobile</text>
+
+  <!-- CDN -->
+  <rect x="490" y="220" width="220" height="76" rx="12" fill="#161b22" stroke="#818cf8" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-cdn" x="588" y="228" width="24" height="24"/>
+  <text x="600" y="270" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#e6edf3">CDN</text>
+  <text x="600" y="288" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#7d8590">Static Assets · Edge Cache</text>
+
+  <!-- LOAD BALANCER -->
+  <rect x="480" y="362" width="240" height="76" rx="12" fill="#161b22" stroke="#60a5fa" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-lb" x="588" y="370" width="24" height="24"/>
+  <text x="600" y="412" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#e6edf3">Load Balancer</text>
+  <text x="600" y="430" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#7d8590">L4/L7 · Health Checks</text>
+
+  <!-- API GATEWAY -->
+  <rect x="470" y="504" width="260" height="80" rx="12" fill="#161b22" stroke="#38bdf8" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-gateway" x="588" y="512" width="24" height="24"/>
+  <text x="600" y="556" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#e6edf3">API Gateway</text>
+  <text x="600" y="574" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#7d8590">Auth · Rate Limit · Routing</text>
+
+  <!-- SERVICES -->
+  <rect x="240" y="644" width="200" height="90" rx="12" fill="#161b22" stroke="#22d3ee" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-auth" x="328" y="654" width="24" height="24"/>
+  <text x="340" y="702" text-anchor="middle" font-family="'Fira Code', monospace" font-size="14" font-weight="600" fill="#e6edf3">Auth Service</text>
+  <text x="340" y="719" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" fill="#7d8590">Identity / JWT</text>
+
+  <rect x="500" y="644" width="200" height="90" rx="12" fill="#161b22" stroke="#22d3ee" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-user" x="588" y="654" width="24" height="24"/>
+  <text x="600" y="702" text-anchor="middle" font-family="'Fira Code', monospace" font-size="14" font-weight="600" fill="#e6edf3">User Service</text>
+  <text x="600" y="719" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" fill="#7d8590">Users / Profiles</text>
+
+  <rect x="760" y="644" width="200" height="90" rx="12" fill="#161b22" stroke="#22d3ee" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-order" x="848" y="654" width="24" height="24"/>
+  <text x="860" y="702" text-anchor="middle" font-family="'Fira Code', monospace" font-size="14" font-weight="600" fill="#e6edf3">Order Service</text>
+  <text x="860" y="719" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" fill="#7d8590">Orders / Payments</text>
+
+  <!-- BROKER -->
+  <rect x="470" y="794" width="260" height="80" rx="12" fill="#161b22" stroke="#2dd4bf" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-broker" x="588" y="802" width="24" height="24"/>
+  <text x="600" y="846" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#e6edf3">Message Broker</text>
+  <text x="600" y="864" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#7d8590">Kafka · Pub/Sub</text>
+
+  <!-- DATA -->
+  <rect x="230" y="934" width="220" height="92" rx="12" fill="#161b22" stroke="#fbbf24" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-cache" x="328" y="946" width="24" height="24"/>
+  <text x="340" y="996" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#e6edf3">Cache</text>
+  <text x="340" y="1014" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#7d8590">Redis</text>
+
+  <rect x="490" y="934" width="220" height="92" rx="12" fill="#161b22" stroke="#fb923c" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-db" x="588" y="946" width="24" height="24"/>
+  <text x="600" y="996" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#e6edf3">Relational DB</text>
+  <text x="600" y="1014" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#7d8590">PostgreSQL · Replica</text>
+
+  <rect x="750" y="934" width="220" height="92" rx="12" fill="#161b22" stroke="#f472b6" stroke-width="1.6" filter="url(#glow)"/>
+  <use href="#icon-storage" x="848" y="946" width="24" height="24"/>
+  <text x="860" y="996" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="600" fill="#e6edf3">Object Storage</text>
+  <text x="860" y="1014" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#7d8590">S3-compatible</text>
+
+  <!-- OBSERVABILITY DOCK -->
+  <rect x="980" y="630" width="170" height="270" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <text x="1065" y="660" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" letter-spacing="2" fill="#8b949e">OBSERVABILITY</text>
+
+  <use href="#icon-log" x="1005" y="684" width="18" height="18"/>
+  <text x="1035" y="698" font-family="'Fira Code', monospace" font-size="12" fill="#c9d1d9">Logs</text>
+
+  <use href="#icon-metric" x="1005" y="764" width="18" height="18"/>
+  <text x="1035" y="778" font-family="'Fira Code', monospace" font-size="12" fill="#c9d1d9">Metrics</text>
+
+  <use href="#icon-trace" x="1005" y="844" width="18" height="18"/>
+  <text x="1035" y="858" font-family="'Fira Code', monospace" font-size="12" fill="#c9d1d9">Traces</text>
 </svg>

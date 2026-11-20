@@ -17,7 +17,7 @@
 
 ## `$ whoami`
 
-I build software that eventually has to survive production.
+I build softwares that eventually have to survive production.
 
 Over the past few years I've worked with early-stage teams and products across **EdTech, SaaS, HealthTech, DentalTech, and marketplaces** — including **BlinkGrid, Denvak, Tabeeb, and SpareItUp**.
 

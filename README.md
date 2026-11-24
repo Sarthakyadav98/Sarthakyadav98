@@ -181,7 +181,7 @@ HEAD~3    probably debugging something
 
 <div align="center">
 
-### build. break. understand. repeat.
+### build.  break.  understand.  repeat.
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Sarthakyadav98&theme=tokyo-night&hide_border=true&area=true" width="100%"/>
 
